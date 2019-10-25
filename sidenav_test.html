@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+
+    <title>SideNav</title>
+
+    <style>
+        header,
+        main,
+        footer {
+            padding-left: 300px;
+        }
+
+        @media only screen and (max-width : 992px) {
+
+            header,
+            main,
+            footer {
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <ul id="slide-out" class="sidenav sidenav-fixed">
+            <li><a href="#!">First Sidebar Link</a></li>
+            <li><a href="#!">Second Sidebar Link</a></li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+
+        <div style="display: flex">
+            <!--            
+            <ul id="slide-out" class="sidenav grey darken-1 z-depth-2" style="transform: translateX(0%);">
+                <li>
+                    <div class="user-view indigo darken-4">
+                        <div class="background">
+                            <img src="images/office.jpg">
+                        </div>
+                        <a href="#user">
+                            <img class="circle" src="img/w.jpg">
+                        </a>
+                        <a href="#name">
+                            <span class="white-text name">DIMA</span>
+                        </a>
+                        <a href="#email">
+                            <span class="white-text email">DIMA@gmail.com</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i class="material-icons">cloud</i>First Link With Icon</a>
+                </li>
+                <li>
+                    <a href="#!">Second Link</a>
+                </li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li>
+                    <a class="subheader">Subheader</a>
+                </li>
+                <li>
+                    <a class="waves-effect" href="#!">Third Link With Waves</a>
+                </li>
+            </ul>
+-->
+            <section id="img-slider" class="offset-11">
+                <div class="slider" style="width: 650px">
+                    <ul class="slides">
+                        <li>
+                            <img src="img/full_screen/Background.jpg">
+                            <div class="caption left-align  red-text text-darken-4">
+                                <h3>Hello </h3>
+                                <h5 class=" red-text text-darken-4">Here's our small slogan.</h5>
+                            </div>
+                        </li>
+
+                        <li>
+                            <img src="img/full_screen/Background.jpg">
+                            <div class="caption left-align  red-text text-darken-4">
+                                <h3>Left Aligned Caption</h3>
+                                <h5 class=" red-text text-darken-4">Here's our small slogan.</h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper black z-depth-2">
+                <div class="container">
+                    <a href="#" class="brand-logo ">Dima</a>
+                    <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="gallery_fullscreen.html">Full Screen</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="sidenav_test.html">Sidenav</a></li>
+
+                        <!-- 
+                            <li><a href="https://t.me/iroh11"
+                                    class="tooltipped btn-floating btn-small transparent transparent"
+                                    data-tooltip="Telegram">
+                                    <i class="fab fa-telegram"></i>
+                                </a></li>
+                            <li><a href="https://twitter.com/@fikru_yohanes"
+                                    class="tooltipped btn-floating btn-small transparent transparent"
+                                    data-tooltip="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a></li>
+                            <li><a href="https://www.facebook.com/yohanes.fikru"
+                                    class="tooltipped btn-floating btn-small transparent transparent"
+                                    data-tooltip="Facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a></li>
+     -->
+                    </ul>
+
+                    <div class="nav-content">
+                        <ul class="tabs tabs-transparent">
+                            <li class="tab"><a href="#test1">Test 1</a></li>
+                            <li class="tab"><a class="active" href="#test2">Test 2</a></li>
+                            <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
+                            <li class="tab"><a href="#test4">Test 4</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="sidenav grey lighten-2" id="mobile-menu">
+                        <li><a href="#done">Acomplishments</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="col l4">
+            <div class="card">
+
+            </div>
+        </div>
+        <div class="col s12 l4">
+            <div class="card z-depth-3 transparent">
+                <div class="card-image">
+                    <img src="img/w.jpg" alt="" class="materialboxed">
+                    <a href="https://www.instagram.com/p/B0yd1iZHsUJ/?igshid=ezxobu58374w"
+                        class="halfway-fab btn-floating blue darken-1 pulse">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+
+                <div class="card-content">
+                    <div class="slider">
+                        <ul class="slides">
+                            <li>
+                                <img src="img/b.jpg">
+                                <div class="caption left-align">
+                                    <h3>This is our big Tagline!</h3>
+                                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/Background.jpg">
+                                <div class="caption left-align">
+                                    <h3>Left Aligned Caption</h3>
+                                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/gallery.jpg">
+                                <div class="caption right-align">
+                                    <h3>Right Aligned Caption</h3>
+                                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/w.jpg">
+                                <div class="caption center-align">
+                                    <h3>This is our big Tagline!</h3>
+                                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    </section>
+
+    <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="img/products/finalll 22.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="img/products/finalll 22.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="img/products/water.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="img/products/water.jpg"></a>
+        <a class="carousel-item" href="#five!"><img src="img/products/water.jpg"></a>
+    </div>
+
+
+    <script src="jquery.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //$('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.scrollspy').scrollSpy();
+            $('.tooltipped').tooltip();
+            $('.slider').slider();
+            $('.fixed-action-btn').floatingActionButton();
+            $('.carousel').carousel();
+        });
+    </script>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, options);
+        });
+
+    </script>
+</body>
+
+</html>

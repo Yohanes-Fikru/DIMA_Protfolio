@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <title>Home</title>
+    <style>
+        @font-face {
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: url(iconfont/MaterialIcons-Regular.eot);
+            /* For IE6-8 */
+            src: local('Material Icons'),
+                local('MaterialIcons-Regular'),
+                url(iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+                url(iconfont/MaterialIcons-Regular.woff) format('woff'),
+                url(iconfont/MaterialIcons-Regular.ttf) format('truetype');
+        }
+
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            /* Preferred icon size */
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+
+            /* Support for all WebKit browsers. */
+            -webkit-font-smoothing: antialiased;
+            /* Support for Safari and Chrome. */
+            text-rendering: optimizeLegibility;
+
+            /* Support for Firefox. */
+            -moz-osx-font-smoothing: grayscale;
+
+            /* Support for IE. */
+            font-feature-settings: 'liga';
+        }
+
+        header {
+            background: url(img/cover.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 1000px;
+            max-height: 2000px;
+            padding-bottom: 5vw;
+        }
+
+        /* fit images to containers/grids */
+        .img-responsive {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* right-left padding for centering content (alternative to container) */
+        .pad {
+            padding-left: 4.5vw;
+            padding-right: 4.5vw;
+        }
+
+        /* top-bottom padding for pictures */
+        .pad-img {
+            padding-top: 0.3vw;
+            padding-bottom: 0.3vw;
+        }
+
+        /* Footer Styles */
+        .footer-style a {
+            padding-top: 8vw;
+            padding-bottom: 8vw;
+        }
+
+        .footer-style:hover {
+            border-bottom: 1px solid white;
+
+        }
+
+        .active-foot-link {
+            border-bottom: 1px solid white;
+        }
+
+        .footer-color {
+            background-color: #0d0d0d;
+        }
+    </style>
+</head>
+
+<body class="grey darken-4">
+
+    <!-- navbar -->
+    <header>
+
+        <div class="navbar">
+            <nav class="nav-wrapper grey darken-4 z-depth-2">
+                <div class="container">
+                    <div>
+                        <a href="#" class="brand-logo "><img src="img/logo.png" class="responsive-img"
+                                style="width: 15%"></a>
+                        <a href="#" class="brand-logo  center">DIMA</a>
+                    </div>
+                    <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <ul class="sidenav grey lighten-2" id="mobile-menu">
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="row pad " style="padding-top: 3vw">
+            <div class="col s12 l4 white-text">
+                <img src="img/b.jpg" class="responsive-img materialboxed">
+                <h2>Hey there</h2>
+                <h4>I'm BINY W. ADENEW</h4>
+                <h4>AKA DIMA</h4>
+            </div>
+
+            <div class="col s12 l6 offset-l1 white-text">
+
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Fixed Action Button -->
+    <div class="fixed-action-btn hide-on-large-only">
+        <a class="btn-floating btn-large green darken-4">
+            <i class="large material-icons">menu</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red pulse" href="home.html"><i class="material-icons">home</i></a></li>
+            <li><a class="btn-floating green darken-1 pulse" href="portfolio.html"><i
+                        class="material-icons">palette</i></a>
+            </li>
+            <li><a class="btn-floating deep-purple pulse" href="contact.html"><i class="material-icons">phone</i></a>
+            </li>
+            <li><a class="btn-floating blue pulse" href="dev.html"><i class="material-icons">code</i></a></li>
+        </ul>
+    </div>
+
+    <!-- Introduction -->
+    <section id="#profile">
+
+        </div>
+
+    </section>
+
+    <!-- Parallax #1 -->
+    <div class="parallax-container">
+        <div class="parallax"><img src="img/Background.jpg"></div>
+    </div>
+
+    <!-- Portrait slider and intro 
+    <section id="#portrait-intro" class="container" style="padding-top: 2vw; padding-bottom: 2vw">
+        <div class="row">
+            <div class="col l6 m6">
+                <div class="card transparent z-depth-0">
+                    <div class="card-content">
+                        <span class="card-title white-text center">
+                            <h4>Portraits </h4>
+                        </span>
+                        <div class="slider">
+                            <ul class="slides">
+                                <li>
+                                    <img src="img/portrait/w.jpg">
+                                </li>
+                                <li>
+                                    <img src="img/portrait/30.jpg">
+                                </li>
+                                <li>
+                                    <img src="img/portrait/27.jpg">
+                                </li>
+                                <li>
+                                    <img src="img/portrait/16.jpg">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-action center white-text">
+                            <a class="waves-effect waves-light btn-floating green pulse" href="portfolio.html"><i
+                                    class="material-icons right">palette</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col l6 m6">
+
+            </div>
+        </div>
+    </section>
+-->
+
+    <!-- Parallax #2 
+    <div class="parallax-container" style="padding-top: 1vw">
+        <div class="parallax"><img src="img/gallery.jpg"></div>
+    </div>
+-->
+    <div class="parallax-container" style="padding-top: 1vw">
+        <div class="parallax">
+            <div class="row">
+                <div class="col l6 m6">
+                    <div class="card transparent z-depth-0">
+                        <div class="card-content">
+                            <span class="card-title white-text center">
+                                <h4>Portraits </h4>
+                            </span>
+                            <div class="slider">
+                                <ul class="slides">
+                                    <li>
+                                        <img src="img/portrait/w.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="img/portrait/30.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="img/portrait/27.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="img/portrait/16.jpg">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-action center white-text">
+                                <a class="waves-effect waves-light btn-floating green pulse" href="portfolio.html"><i
+                                        class="material-icons right">palette</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="page-footer footer-color center">
+        <div class="pad">
+            <div class="row">
+                <div class="col l5 m5 s5">
+                    <h5 class="grey-text text-lighten-2">Sections</h5>
+                    <div style="display: flex; justify-content: space-between" class="hide-on-med-and-down">
+                        <a class="footer-style active-foot-link grey-text text-lighten-3" href="home.html">Home</a>
+                        <a class="footer-style grey-text text-lighten-3" href="portfolio.html">Portfolio</a>
+                        <a class="footer-style grey-text text-lighten-3" href="contact.html">Contact</a>
+                        <a class="footer-style grey-text text-lighten-3" href="dev.html">Developer Info</a>
+                    </div>
+                    <div class="row hide-on-large-only">
+                        <div class="col m6 s6">
+                            <a class="footer-style active-foot-link grey-text text-lighten-1" href="home.html">Home</a>
+                        </div>
+                        <div class="col m6 s6">
+                            <a class="footer-style grey-text text-lighten-3" href="portfolio.html">Portfolio</a>
+                        </div>
+                    </div>
+                    <div class="row hide-on-large-only">
+                        <div class="col m6 s6">
+                            <a class="footer-style grey-text text-lighten-3" href="contact.html">Contact</a>
+                        </div>
+                        <div class="col m6 s6">
+                            <a class="footer-style grey-text text-lighten-3" href="dev.html">Developer Info</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- empty separator -->
+                <div class="col l2 m2 s2"></div>
+                <div class="col l5 m5 s5">
+                    <div class="center white-text">
+                        <h5>Information</h5>
+                    </div>
+                    <div style="display: flex; justify-content: space-between" class="hide-on-med-and-down">
+                        <a class="waves-effect waves-light btn modal-trigger grey darken-4" href="#contact_info">Contact
+                            Information</a>
+                        <a class="waves-effect waves-light btn modal-trigger grey darken-4" href="#social_media">Social
+                            Media</a>
+
+                    </div>
+                    <div class="row hide-on-large-only">
+                        <a class="waves-effect waves-light btn modal-trigger grey darken-4" href="#contact_info">Contact
+                            Information</a>
+                    </div>
+                    <div class="row hide-on-large-only">
+                        <a class="waves-effect waves-light btn modal-trigger grey darken-4" href="#social_media">Social
+                            Media</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact_info Modal -->
+        <div id="contact_info" class="modal bottom-sheet">
+            <div class="modal-content white-text grey darken-4">
+                <h4>Contact Information</h4>
+                <p>Phone1: +251 9-- --- ---</p>
+                <p>Phone2: +251 9-- --- ---</p>
+                <p>Primary Email: <a href="johndoe@gmail.com">johndoe@gmail.com</a></p>
+                <p>Secondary Email: <a href="johndoe@gmail.com">johndoe@gmail.com</a></p>
+                <p>Postal Code: -----</p>
+            </div>
+        </div>
+        <!-- social_media Modal -->
+        <div id="social_media" class="modal bottom-sheet">
+            <div class="modal-content white-text grey darken-4">
+                <h4>Social Media</h4>
+
+            </div>
+        </div>
+        <!-- Bottom Footer -->
+        <div class="footer-copyright black">
+            <div class="container center">
+                Developed in Sep 2019 by Yohanes Fikru.
+                <a class="waves-effect waves-light btn-flat modal-trigger black" href="#dev_info">Click Here for
+                    More</a>
+            </div>
+        </div>
+        <!-- Developer Modal -->
+        <div id="dev_info" class="modal bottom-sheet">
+            <div class="modal-content white-text grey darken-4">
+                <h4>Developer Information</h4>
+                <h5>Name: Yohanes Fikru</h5>
+                <p class="green-text darken-3">Freelance Developer/ Game Developer</p>
+                <p>Made with: <a href="#">Materialize CSS</a></p>
+                <p>For more information <a class=" grey darken-4 grey-text text-lighten-1" href="dev.html"
+                        style="padding-left: 0.5vw">CLICK HERE</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- materialize javascript and jquery -->
+    <script src="jquery.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.tabs').tabs();
+            $('.tooltipped').tooltip();
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true,
+            });
+            $('.modal').modal();
+            $('.fixed-action-btn').floatingActionButton();
+            $('.parallax').parallax();
+            $('.slider').slider();
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {
+                direction: 'up',
+                hoverEnabled: false
+            });
+        });
+    </script>
+</body>
+
+</html>

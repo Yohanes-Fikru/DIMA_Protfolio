@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <title>Portfolio</title>
+
+    <style>
+        @font-face {
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: url(iconfont/MaterialIcons-Regular.eot);
+            /* For IE6-8 */
+            src: local('Material Icons'),
+                local('MaterialIcons-Regular'),
+                url(iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+                url(iconfont/MaterialIcons-Regular.woff) format('woff'),
+                url(iconfont/MaterialIcons-Regular.ttf) format('truetype');
+        }
+
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            /* Preferred icon size */
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+
+            /* Support for all WebKit browsers. */
+            -webkit-font-smoothing: antialiased;
+            /* Support for Safari and Chrome. */
+            text-rendering: optimizeLegibility;
+
+            /* Support for Firefox. */
+            -moz-osx-font-smoothing: grayscale;
+
+            /* Support for IE. */
+            font-feature-settings: 'liga';
+        }
+
+        header {
+            padding-bottom: 5vw;
+        }
+
+        /* fit images to containers/grids */
+        .img-responsive {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* right-left padding for centering content (alternative to container) */
+        .pad {
+            padding-left: 4.5vw;
+            padding-right: 4.5vw;
+        }
+
+        /* top-bottom padding for pictures */
+        .pad-img {
+            padding-top: 0.3vw;
+            padding-bottom: 0.3vw;
+        }
+
+        /* Footer Styles */
+        .footer-style a {
+            padding-top: 8vw;
+            padding-bottom: 8vw;
+        }
+
+        .footer-style:hover {
+            border-bottom: 1px solid white;
+
+        }
+
+        .active-foot-link {
+            border-bottom: 1px solid white;
+        }
+
+        .footer-color {
+            background-color: #0d0d0d;
+        }
+    </style>
+</head>
+
+<body class="grey darken-4">
+    <!-- navbar -->
+    <header>
+        <div class="navbar-fixed">
+            <nav class="nav-extended ">
+                <div class="nav-wrapper grey darken-4 z-depth-2 pad">
+                        <!-- Brand Logo -->
+                        <a href="#" class="brand-logo ">DIMA Portfolio</a>
+                        <!-- Only for Navbar convinence (if it works, don't touch it, right...) -->
+                        <a href="" class="sidenav-trigger" data-target="mobile-menu"></a>
+
+                        
+                        <!-- Something to Fix!!! -->
+                        <ul class="right hide-on-med-and-down">
+                            <a class="btn transparent white-text" href="portfolio.html">Portfolio</a>
+                            <a class="btn transparent white-text" href="contact.html">Contact</a>
+                        </ul>
+
+
+                        <!-- Extended Nav-content -->
+                        <div class="nav-content ">
+                            <ul class="tabs tabs-transparent hide-on-med-and-down grey darken-4">
+                                <li class="tab col l4">
+                                    <a class="active" href="#portrait">Portrait</a>
+                                </li>
+                                <li class="tab col l4">
+                                    <a href="#posters">Posters</a>
+                                </li>
+                                <li class="tab col l4">
+                                    <a href="#3d">3D and character Modeling</a>
+                                </li>
+                                <li class="tab col l4">
+                                    <a href="#product">Product Modeling</a>
+                                </li>
+                                <li class="tab col l4">
+                                    <a href="#business-cards">Business Cards</a>
+                                </li>
+                                <li class="tab col l4">
+                                    <a href="#sculpt">Sculptures</a>
+                                </li>
+                            </ul>
+                            <!-- Extended Nav-bar for Middle and Small Screens -->
+                            <ul class="tabs tabs-transparent hide-on-large-only darken-4">
+                                <li class="tab col l4">
+                                    <a class="active" href="#portrait">
+                                        <i class="medium material-icons">palette</i></a>
+                                </li>
+                                <li class="tab col l4">
+                                    <a href="#posters">
+                                        <i class="medium material-icons">movie</i>
+                                    </a>
+                                </li>
+                                <li class="tab col l4">
+                                    <a href="#3d">
+                                        <i class="medium material-icons">3d_rotation</i>
+                                    </a>
+                                </li>
+                                <li class="tab col l4">
+                                    <a href="#business-cards">
+                                        <i class="medium material-icons">business_center</i>
+                                    </a>
+                                </li>
+                                <li class="tab col l4">
+                                    <a href="#product">
+                                        <i class="medium material-icons">portrait</i>
+                                    </a>
+                                </li>
+                                <li class="tab col l4">
+                                    <a href="#sculpt">
+                                        <i class="medium material-icons">portrait</i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Fixed Action Button -->
+    <div class="fixed-action-btn hide-on-large-only">
+        <a class="btn-floating btn-large green darken-4">
+            <i class="large material-icons">menu</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red pulse" href="home.html"><i class="material-icons">home</i></a></li>
+            <li><a class="btn-floating green darken-1 pulse" href="portfolio.html"><i class="material-icons">palette</i></a></li>
+            <li><a class="btn-floating deep-purple pulse" href="contact.html"><i class="material-icons">phone</i></a></li>
+            <li><a class="btn-floating blue pulse" href="dev.html"><i class="material-icons">code</i></a></li>
+        </ul>
+    </div>
+    <!-- Portrait works -->
+    <div id="portrait" class="pad">
+        <div class="hide-on-small-only">
+            <div class="row">
+                <div class="col l3 m3 s12 ">
+                    <img style="width: 100%" class="materialboxed pad-img" src="img/portrait/1.jpg">
+                    <img style="width: 100%" class="materialboxed pad-img" src="img/portrait/2.jpg">
+                </div>
+                <div class="col l3 m3 s12 ">
+                    <img style="width: 100%" class="materialboxed pad-img" src="img/portrait/5.jpg">
+                </div>
+                <div class="col l3 m3 s12">
+                    <img style="width: 100%" class="materialboxed pad-img" src="img/portrait/3.jpg">
+                    <img style="width: 100%" class="materialboxed pad-img" src="img/portrait/4.jpg">
+                </div>
+                <div class="col l3 m3 s12">
+                    <img style="width: 109%" class="materialboxed" src="img/portrait/6.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l3 m3 s12">
+                    <img style="width: 100%" class="materialboxed pad-img" src="img/portrait/7.jpg">
+                    <img style="width: 100%" class="materialboxed pad-img" src="img/portrait/8.jpg">
+                </div>
+                <div class="col l5 m5 s12">
+                    <img style="width: 101.5%" class="materialboxed" src="img/portrait/w.jpg">
+                </div>
+                <div class="col l4 m4 s12">
+                    <div class="row">
+                        <div class="col l6 m6">
+                            <img style="width: 97%" class="materialboxed pad-img" src="img/portrait/10.jpg">
+                            <img style="width: 97%" class="materialboxed pad-img" src="img/portrait/11.jpg">
+                        </div>
+                        <div class="col l6 m6">
+                            <img style="width: 120%" class="materialboxed" src="img/portrait/12.jpg">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l6 m6">
+                            <img style="width: 98%" class="materialboxed" src="img/portrait/13.jpg">
+                        </div>
+                        <div class="col l6 m6">
+                            <img style="width: 104%" class="materialboxed" src="img/portrait/14.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l3 m3">
+                    <img style="width: 100%" class="materialboxed pad-img" src="img/portrait/16.jpg">
+                </div>
+                <div class="col l3 m3">
+                    <img style="width: 140.5%" class="materialboxed pad-img" src="img/portrait/17.jpg">
+                </div>
+                <div class="col l1 m1"></div>
+                <div class="col l3 m3">
+                    <img style="width: 94.3%" class="materialboxed pad-img" src="img/portrait/22.jpg">
+                </div>
+                <div class="col l2 m2">
+                    <img style="width: 106.5%" class="materialboxed pad-img" src="img/portrait/24.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l5 m5">
+                    <img style="width: 100%" class="materialboxed pad-img" src="img/portrait/25.jpg">
+                    <div class="row">
+                        <div class="col l4 m4">
+                            <img style="width: 121%" class="materialboxed pad-img" src="img/portrait/20.jpg">
+                            <img style="width: 121%" class="materialboxed pad-img" src="img/portrait/cattt.jpg">
+                        </div>
+                        <div class="col l1 m1"></div>
+                        <div class="col l7 m7">
+                            <img style="width: 100%" class="materialboxed pad-img" src="img/portrait/31.jpg">
+                            <img style="width: 100%" class="materialboxed pad-img" src="img/portrait/21.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col l7 m7">
+                    <div class="row">
+                        <div class="col l6 m6">
+                            <img style="width: 100%" class="materialboxed pad-img" src="img/portrait/27.jpg">
+                        </div>
+                        <div class="col l6 m6">
+                            <img style="width: 100%" class="materialboxed pad-img" src="img/portrait/30.jpg">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l6 m6">
+                            <img style="width: 100%" class="materialboxed pad-img" src="img/portrait/32.jpg">
+                        </div>
+                        <div class="col l6 m6">
+                            <img style="width: 109%" class="materialboxed pad-img" src="img/portrait/23.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hide-on-med-and-up">
+            <!-- carousel #1: caption -->
+            <div class="white-text center">
+                <h3>Picture portraits</h3>
+            </div>
+            <!-- carousel #1: cartoon conversions -->
+            <div class="carousel carousel-slider">
+                <a class="carousel-item" href="#one!"><img src="img/portrait/1.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="img/portrait/2.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="img/portrait/3.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="img/portrait/4.jpg"></a>
+                <a class="carousel-item" href="#five!"><img src="img/portrait/31.jpg"></a>
+            </div>
+            <!-- carousel #2: caption -->
+            <div class="white-text center">
+                <h3>Picture portraits</h3>
+            </div>
+            <!-- carousel #2-->
+            <div class="carousel carousel-slider">
+                <a class="carousel-item" href="#one!"><img src="img/portrait/16.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="img/portrait/22.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="img/portrait/21.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="img/portrait/20.jpg"></a>
+                <a class="carousel-item" href="#five!"><img src="img/portrait/29.jpg"></a>
+            </div>
+            <!-- carousel #3: caption -->
+            <div class="white-text center">
+                <h3>Picture portraits</h3>
+            </div>
+            <!-- carousel #3-->
+            <div class="carousel carousel-slider">
+                <a class="carousel-item" href="#one!"><img src="img/portrait/w.jpg"></a>
+                <a class="carousel-item" href="#one!"><img src="img/portrait/30.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="img/portrait/12.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="img/portrait/13.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="img/portrait/28.jpg"></a>
+                <a class="carousel-item" href="#five!"><img src="img/portrait/18.jpg"></a>
+                <a class="carousel-item" href="#five!"><img src="img/portrait/27.jpg"></a>
+            </div>
+            <!-- carousel #4: caption -->
+            <div class="white-text center">
+                <h3>Picture portraits</h3>
+            </div>
+            <!-- carousel #4-->
+            <div class="carousel carousel-slider">
+                <a class="carousel-item" href="#one!"><img src="img/portrait/6.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="img/portrait/5.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="img/portrait/24.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="img/portrait/32.jpg"></a>
+            </div>
+            <!-- carousel #5: caption -->
+            <div class="white-text center">
+                <h3>Simsons portraits</h3>
+            </div>
+            <!-- carousel #5-->
+            <div class="carousel carousel-slider">
+                <a class="carousel-item" href="#one!"><img src="img/portrait/7.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="img/portrait/8.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="img/portrait/19.jpg"></a>
+            </div>
+        </div>
+    </div>
+    <!-- Posters -->
+    <div id="posters" class="pad">
+        <div class="row">
+            <div class="col l4 m4">
+                <img src="img/posters/12.jpg" class="responsive-img materialboxed pad-img">
+                <img src="img/posters/14.jpg" class="responsive-img materialboxed pad-img">
+            </div>
+            <div class="col l4 m4">
+                <img src="img/posters/11.jpg" style="width: 111%" class="materialboxed pad-img hide-on-small-only">
+                <img src="img/posters/11.jpg" class="responsive-img materialboxed pad-img hide-on-med-and-up">
+            </div>
+            <div class="col l1 m1"></div>
+            <div class="col l3 m3">
+                <div class="card transparent hide-on-med-and-down">
+                    <div class="card-content white-text">
+                        <p>
+                            These are posters made for Events, Movies and concept arts. There are also book
+                            promotion and informational posters.
+                        </p>
+                    </div>
+                </div>
+                <img src="img/posters/10.jpg" style="width: 94%" class="materialboxed pad-img">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l3 m3">
+                <img src="img/posters/0.jpg" class="responsive-img materialboxed pad-img">
+                <img src="img/posters/3.jpg" class="responsive-img materialboxed pad-img">
+            </div>
+            <div class="col l3 m3">
+                <img src="img/posters/1.jpg" class="responsive-img materialboxed pad-img">
+                <img src="img/posters/8.jpg" class="responsive-img materialboxed pad-img">
+            </div>
+            <div class="col l3 m3">
+                <img src="img/posters/2.jpg" class="responsive-img materialboxed pad-img">
+                <img src="img/posters/9.jpg" class="responsive-img materialboxed pad-img">
+            </div>
+            <div class="col l3 m3">
+                <img src="img/posters/4.jpg" class="responsive-img materialboxed pad-img">
+                <img src="img/posters/17.jpg" class="responsive-img materialboxed pad-img">
+            </div>
+        </div>
+    </div>
+    <!-- 3D and Character Modeling -->
+    <div id="3d" class="pad">
+        <!-- 3D Modeled Objects -->
+        <div class="row">
+            <div class="col l1 m1"></div>
+            <div class="col l4 m4">
+                <img src="img/3D_caracter_modeling/1.jpg" class="responsive-img modal-trigger" href="#modal1">
+                <div class="center white-text">
+                    <h5>Click the image for more</h5>
+                </div>
+            </div>
+            <div class="col l1 m1"></div>
+            <div class="col l4 m4">
+                <img src="img/3D_caracter_modeling/2.jpg" class="responsive-img modal-trigger" href="#modal2">
+                <div class="center white-text">
+                    <h5>Click the image for more</h5>
+                </div>
+            </div>
+            <div class="col l1 m1"></div>
+        </div>
+        <div class="row">
+            <div class="col l1 m1"></div>
+            <div class="col l4 m4">
+                <img src="img/3D_caracter_modeling/3.jpg" class="responsive-img modal-trigger" href="#modal3">
+                <div class="center white-text">
+                    <h5>Click the image for more</h5>
+                </div>
+            </div>
+            <div class="col l1 m1"></div>
+            <div class="col l4 m4">
+                <img src="img/3D_caracter_modeling/4.jpg" class="responsive-img modal-trigger" href="#modal4">
+                <div class="center white-text">
+                    <h5>Click the image for more</h5>
+                </div>
+            </div>
+            <div class="col l1 m1"></div>
+        </div>
+        <div class="row">
+            <div class="col l1 m1"></div>
+            <div class="col l4 m4">
+                <img src="img/3D_caracter_modeling/6.png" class="responsive-img modal-trigger" href="#modal5">
+                <div class="center white-text">
+                    <h5>Click the image for more</h5>
+                </div>
+            </div>
+            <div class="col l1 m1"></div>
+            <div class="col l4 m4">
+                <img src="img/3D_caracter_modeling/8-1.png" class="responsive-img modal-trigger" href="#modal6">
+                <div class="center white-text">
+                    <h5>Click the image for more</h5>
+                </div>
+            </div>
+            <div class="col l1 m1"></div>
+        </div>
+
+        <div id="modal1" class="modal grey darken-4">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col l4 m4">
+                        <img src="img/3D_caracter_modeling/1.jpg" class="responsive-img materialboxed pad-img">
+                    </div>
+                    <div class="col l4 m4">
+                        <img src="img/3D_caracter_modeling/1-1.jpg" class="responsive-img materialboxed pad-img">
+                    </div>
+                    <div class="col l4 m4">
+                        <img src="img/3D_caracter_modeling/1-4.jpg" class="responsive-img materialboxed pad-img">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l3 m3">
+                        <img src="img/3D_caracter_modeling/1-6.jpg" class="responsive-img materialboxed pad-img">
+                    </div>
+                    <div class="col l3 m3">
+                        <img src="img/3D_caracter_modeling/1-7.jpg" class="responsive-img materialboxed pad-img">
+                    </div>
+                    <div class="col l3 m3">
+                        <img src="img/3D_caracter_modeling/1-8.jpg" class="responsive-img materialboxed pad-img">
+                    </div>
+                    <div class="col l3 m3">
+                        <img src="img/3D_caracter_modeling/1-9.jpg" class="responsive-img materialboxed pad-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal2" class="modal grey darken-4">
+            <div class="modal-content">
+                <img src="img/3D_caracter_modeling/2-1.jpg" class="responsive-img materialboxed">
+            </div>
+        </div>
+        <div id="modal3" class="modal grey darken-4">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col l6 m6">
+                        <img src="img/3D_caracter_modeling/3-1.png" class="responsive-img materialboxed pad-img">
+                    </div>
+                    <div class="col l6 m6">
+                        <img src="img/3D_caracter_modeling/3-2.png" class="responsive-img materialboxed pad-img">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l6 m6">
+                        <img src="img/3D_caracter_modeling/3-3.png" class="responsive-img materialboxed pad-img">
+                    </div>
+                    <div class="col l6 m6">
+                        <img src="img/3D_caracter_modeling/3-4.png" class="responsive-img materialboxed pad-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal4" class="modal grey darken-4">
+            <div class="modal-content">
+                <img src="img/3D_caracter_modeling/4-1.jpg" class="responsive-img materialboxed">
+            </div>
+        </div>
+        <div id="modal5" class="modal grey darken-4">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col l6 m6">
+                        <img src="img/3D_caracter_modeling/6-1.png" class="responsive-img materialboxed pad-img">
+                        <img src="img/3D_caracter_modeling/6-2.png" class="responsive-img materialboxed pad-img">
+                    </div>
+                    <div class="col l6 m6">
+                        <img src="img/3D_caracter_modeling/6-3.png" class="responsive-img materialboxed pad-img">
+                        <img src="img/3D_caracter_modeling/6-4.png" class="responsive-img materialboxed pad-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal6" class="modal grey darken-4">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col l6 m6">
+                        <img src="img/3D_caracter_modeling/8-1.png" class="responsive-img materialboxed pad-img">
+                    </div>
+                    <div class="col l6 m6">
+                        <img src="img/3D_caracter_modeling/8.png" class="responsive-img materialboxed pad-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Business Cards -->
+    <div id="business-cards" class="pad">
+        <div class="row">
+            <div class="col l1 m1"></div>
+            <div class="col l4 m4">
+                <img src="img/cards/card front.jpg" style="width: 100%" class="materialboxed responsive-img">
+            </div>
+            <div class="col l2 m2"></div>
+            <div class="col l4 m4">
+                <img src="img/cards/7.1.jpg" style="width: 100%; padding-top: 0.5vw"
+                    class="materialboxed responsive-img">
+            </div>
+            <div class="col l1 m1"></div>
+        </div>
+        <div class="row">
+            <div class="col l4 m4"></div>
+            <div class="col l4 m4">
+                <img src="img/cards/MALSDF.jpg" style="width: 100%" class="materialboxed responsive-img">
+            </div>
+            <div class="col l4 m4"></div>
+        </div>
+    </div>
+    <!-- Product Modeling -->
+    <div id="product" class="pad">
+        <div class="row">
+            <div class="col l6 m6">
+                <div class="card transparent z-depth-2">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/products/1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator white-text center">Meta Beer<i
+                                class="material-icons right">more_vert</i></span>
+                        <p class="white-text">Dummy text</p>
+                    </div>
+                    <div class="card-reveal grey darken-4">
+                        <span class="card-title white-text">Meta Beer<i class="material-icons right">close</i></span>
+                        <div class="row">
+                            <div class="col l3 m3"></div>
+                            <div class="col l6 m6">
+                                <img src="img/products/1-1.jpg" class="responsive-img materialboxed">
+                            </div>
+                            <div class="col l3 m3"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col l6 m6">
+                                <img src="img/products/1-2.jpg" class="responsive-img materialboxed">
+                            </div>
+                            <div class="col l6 m6">
+                                <img src="img/products/1-3.jpg" class="responsive-img materialboxed">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col l6 m6">
+                <div class="card transparent z-depth-2">
+                    <div class="card-image materialboxed">
+                        <img src="img/products/2.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title white-text center">Coca Cola</span>
+                        <a class="waves-effect waves-white btn-flat grey-text text-darken-4 disabled" href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sculptures -->
+    <div id="sculpt" class="pad">
+        <div class="row">
+            <div class="col l4 m4">
+                <img src="img/Sculpture/1.jpg" class="responsive-img materialboxed">
+            </div>
+            <div class="col l4 m4">
+                <img src="img/Sculpture/2.jpg" class="responsive-img materialboxed">
+            </div>
+            <div class="col l4 m4">
+                <img src="img/Sculpture/3.jpg" class="responsive-img materialboxed">
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="page-footer footer-color center">
+        <div class="pad">
+            <div class="row">
+                <div class="col l5 m5 s5">
+                    <h5 class="grey-text text-lighten-2">Sections</h5>
+                    <div style="display: flex; justify-content: space-between" class="hide-on-med-and-down">
+                        <a class="footer-style grey-text text-lighten-3" href="home.html">Home</a>
+                        <a class="footer-style active-foot-link grey-text text-lighten-3"
+                            href="portfolio.html">Portfolio</a>
+                        <a class="footer-style grey-text text-lighten-3" href="contact.html">Contact</a>
+                        <a class="footer-style grey-text text-lighten-3" href="dev.html">Developer Info</a>
+                    </div>
+                    <div class="row hide-on-large-only">
+                        <div class="col m6 s6">
+                            <a class="footer-style grey-text text-lighten-1" href="home.html">Home</a>
+                        </div>
+                        <div class="col m6 s6">
+                            <a class="footer-style active-foot-link grey-text text-lighten-3"
+                                href="portfolio.html">Portfolio</a>
+                        </div>
+                    </div>
+                    <div class="row hide-on-large-only">
+                        <div class="col m6 s6">
+                            <a class="footer-style grey-text text-lighten-3" href="contact.html">Contact</a>
+                        </div>
+                        <div class="col m6 s6">
+                            <a class="footer-style grey-text text-lighten-3" href="dev.html">Developer Info</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- empty separator -->
+                <div class="col l2 m2 s2"></div>
+                <div class="col l5 m5 s5">
+                    <div class="center white-text">
+                        <h5>Information</h5>
+                    </div>
+                    <div style="display: flex; justify-content: space-between" class="hide-on-med-and-down">
+                        <a class="waves-effect waves-light btn modal-trigger grey darken-4" href="#contact_info">Contact
+                            Information</a>
+                        <a class="waves-effect waves-light btn modal-trigger grey darken-4" href="#social_media">Social
+                            Media</a>
+
+                    </div>
+                    <div class="row hide-on-large-only">
+                        <a class="waves-effect waves-light btn modal-trigger grey darken-4" href="#contact_info">Contact
+                            Information</a>
+                    </div>
+                    <div class="row hide-on-large-only">
+                        <a class="waves-effect waves-light btn modal-trigger grey darken-4" href="#social_media">Social
+                            Media</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact_info Modal -->
+        <div id="contact_info" class="modal bottom-sheet">
+            <div class="modal-content white-text grey darken-4">
+                <h4>Contact Information</h4>
+                <p>Phone1: +251 9-- --- ---</p>
+                <p>Phone2: +251 9-- --- ---</p>
+                <p>Primary Email: <a href="johndoe@gmail.com">johndoe@gmail.com</a></p>
+                <p>Secondary Email: <a href="johndoe@gmail.com">johndoe@gmail.com</a></p>
+                <p>Postal Code: -----</p>
+            </div>
+        </div>
+        <!-- social_media Modal -->
+        <div id="social_media" class="modal bottom-sheet">
+            <div class="modal-content white-text grey darken-4">
+                <h4>Social Media</h4>
+
+            </div>
+        </div>
+        <!-- Bottom Footer -->
+        <div class="footer-copyright black">
+            <div class="container center">
+                Developed in Sep 2019 by Yohanes Fikru.
+                <a class="waves-effect waves-light btn-flat modal-trigger black" href="#dev_info">Click Here for
+                    More</a>
+            </div>
+        </div>
+        <!-- Developer Modal -->
+        <div id="dev_info" class="modal bottom-sheet">
+            <div class="modal-content white-text grey darken-4">
+                <h4>Developer Information</h4>
+                <h5>Name: Yohanes Fikru</h5>
+                <p class="green-text darken-3">Freelance Developer/ Game Developer</p>
+                <p>Made with: <a href="#">Materialize CSS</a></p>
+                <p>For more information <a class=" grey darken-4 grey-text text-lighten-1" href="dev.html"
+                        style="padding-left: 0.5vw">CLICK HERE</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- materialize javascript and jquery -->
+    <script src="jquery.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.tabs').tabs();
+            $('.tooltipped').tooltip();
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true,
+            });
+            $('.modal').modal();
+            $('.fixed-action-btn').floatingActionButton();
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {
+                direction: 'up',
+                hoverEnabled: false
+            });
+        });
+    </script>
+</body>
+
+</html>
