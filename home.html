@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="materialize/css/materialize.min.css">
     <title>Home</title>
     <style>
@@ -47,14 +48,26 @@
             font-feature-settings: 'liga';
         }
 
-        header {
+        /* header {
             background: url(img/cover.jpg);
             background-size: cover;
             background-position: center;
             min-height: 1000px;
             max-height: 2000px;
             padding-bottom: 5vw;
+        } */
+
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
         }
+
+        main {
+            flex: 1 0 auto;
+        }
+
 
         /* fit images to containers/grids */
         .img-responsive {
@@ -93,20 +106,24 @@
         .footer-color {
             background-color: #0d0d0d;
         }
+
+        /* .parallax-container {
+            height: 33vw;
+        } */
     </style>
 </head>
 
 <body class="grey darken-4">
 
-    <!-- navbar -->
     <header>
 
+        <!-- navbar -->
         <div class="navbar">
             <nav class="nav-wrapper grey darken-4 z-depth-2">
                 <div class="container">
                     <div>
-                        <a href="#" class="brand-logo "><img src="img/logo.png" class="responsive-img"
-                                style="width: 15%"></a>
+                        <a href="#" class="brand-logo hide-on-med-and-down"><img src="img/logo.png"
+                                class="responsive-img" style="width: 15%"></a>
                         <a href="#" class="brand-logo  center">DIMA</a>
                     </div>
                     <a href="" class="sidenav-trigger" data-target="mobile-menu">
@@ -126,130 +143,194 @@
             </nav>
         </div>
 
-
-        <div class="row pad " style="padding-top: 3vw">
-            <div class="col s12 l4 white-text">
-                <img src="img/b.jpg" class="responsive-img materialboxed">
-                <h2>Hey there</h2>
-                <h4>I'm BINY W. ADENEW</h4>
-                <h4>AKA DIMA</h4>
-            </div>
-
-            <div class="col s12 l6 offset-l1 white-text">
-
-            </div>
+        <!-- Fixed Action Button -->
+        <div class="fixed-action-btn hide-on-large-only">
+            <a class="btn-floating btn-large green darken-4">
+                <i class="large material-icons">menu</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating red pulse" href="home.html"><i class="material-icons">home</i></a></li>
+                <li><a class="btn-floating green darken-1 pulse" href="portfolio.html"><i
+                            class="material-icons">palette</i></a>
+                </li>
+                <li><a class="btn-floating deep-purple pulse" href="contact.html"><i
+                            class="material-icons">phone</i></a>
+                </li>
+                <li><a class="btn-floating blue pulse" href="dev.html"><i class="material-icons">code</i></a></li>
+            </ul>
         </div>
 
     </header>
 
-    <!-- Fixed Action Button -->
-    <div class="fixed-action-btn hide-on-large-only">
-        <a class="btn-floating btn-large green darken-4">
-            <i class="large material-icons">menu</i>
-        </a>
-        <ul>
-            <li><a class="btn-floating red pulse" href="home.html"><i class="material-icons">home</i></a></li>
-            <li><a class="btn-floating green darken-1 pulse" href="portfolio.html"><i
-                        class="material-icons">palette</i></a>
-            </li>
-            <li><a class="btn-floating deep-purple pulse" href="contact.html"><i class="material-icons">phone</i></a>
-            </li>
-            <li><a class="btn-floating blue pulse" href="dev.html"><i class="material-icons">code</i></a></li>
-        </ul>
-    </div>
 
-    <!-- Introduction -->
-    <section id="#profile">
 
+    <main>
+        <!-- Parallax #1 -->
+        <div class="parallax-container hide-on-med-and-down">
+            <div class="parallax"><img src="img/posters/12.jpg"></div>
+        </div>
+        <!-- First row of links -->
+        <div class="row pad hide-on-med-and-down" style="padding-top: 1vw">
+            <!-- Portrait link -->
+            <a href="portfolio.html#portrait" class="black-text">
+                <div class="col l6 m6" style="background: url(img/portrait/12.jpg); background-size: cover; background-position: center;
+                min-height: 470px; max-height: 2000px; padding-bottom: 5vw;">
+
+                    <div class="row">
+                        <div class="col l4 m4 s4">
+                            <div class="card-panel transparent z-depth-0"></div>
+                        </div>
+                        <div class="col l4 m4 s4">
+                            <div class="card-panel transparent z-depth-0"></div>
+                        </div>
+                        <div class="col l4 m4 s4">
+                            <div class="card-panel transparent z-depth-0">
+                                <h4>Portrait</h4>
+                                <h4>Paintings</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- Posters link -->
+            <a href="portfolio.html#posters" class="black-text">
+                <div class="col l6 m6" style="background: url(img/posters/11.jpg); background-size: cover; background-position: center;
+                min-height: 470px; max-height: 2000px; padding-bottom: 5vw;">
+                    <!-- place holder -->
+                    <div class="row">
+                        <div class="col l4 m4 s4">
+                            <div class="card-panel transparent z-depth-0"></div>
+                        </div>
+                        <div class="col l4 m4 s4">
+                            <div class="card-panel transparent z-depth-0"></div>
+                        </div>
+                        <div class="col l4 m4 s4">
+                            <div class="card-panel transparent z-depth-0"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l4 m4 s4">
+                            <div class="card-panel transparent z-depth-0"></div>
+                        </div>
+                        <div class="col l4 m4 s4">
+                            <div class="card-panel transparent z-depth-0"></div>
+                        </div>
+                        <div class="col l4 m4 s4">
+                            <div class="card-panel transparent z-depth-0">
+                                <h3>Posters</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Second row of links -->
+        <div class="row pad hide-on-med-and-down" style="padding-top: 1vw">
+            <!-- 3D link -->
+            <a href="portfolio.html#3d" class="black-text">
+                <div class="col l6 m6" style="background: url(img/3D_caracter_modeling/1.jpg); background-size: cover; background-position: center;
+                min-height: 400px; max-height: 2000px; padding-bottom: 5vw;">
+                    <div class="row">
+                        <div class="col l4 m4 s4">
+                            <div class="card-panel transparent z-depth-0 white-text">
+                                <h5>3D</h5>
+                                <h5>Modeling</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- Products link -->
+            <a href="portfolio.html#product" class="black-text">
+                <div class="col l6 m6" style="background: url(img/products/2.jpg); background-size: cover; background-position: center;
+                min-height: 400px; max-height: 2000px; padding-bottom: 5vw;">
+                    <!-- place holder -->
+                    <div class="row">
+                        <div class="col l3 m3 s3">
+                            <div class="card-panel transparent z-depth-1 white-text"></div>
+                        </div>
+                        <div class="col l3 m3 s3">
+                            <div class="card-panel transparent z-depth-0 white-text"></div>
+                        </div>
+                        <div class="col l3 m3 s3">
+                            <div class="card-panel transparent z-depth-0 white-text"></div>
+                        </div>
+                        <div class="col l3 m3 s3">
+                            <div class="card-panel transparent z-depth-0 white-text">
+                                <h5>Product Modeling</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
         </div>
 
-    </section>
-
-    <!-- Parallax #1 -->
-    <div class="parallax-container">
-        <div class="parallax"><img src="img/Background.jpg"></div>
-    </div>
-
-    <!-- Portrait slider and intro 
-    <section id="#portrait-intro" class="container" style="padding-top: 2vw; padding-bottom: 2vw">
-        <div class="row">
+        <div class="row show-on-med-and-down">
             <div class="col l6 m6">
-                <div class="card transparent z-depth-0">
-                    <div class="card-content">
-                        <span class="card-title white-text center">
-                            <h4>Portraits </h4>
-                        </span>
-                        <div class="slider">
-                            <ul class="slides">
-                                <li>
-                                    <img src="img/portrait/w.jpg">
-                                </li>
-                                <li>
-                                    <img src="img/portrait/30.jpg">
-                                </li>
-                                <li>
-                                    <img src="img/portrait/27.jpg">
-                                </li>
-                                <li>
-                                    <img src="img/portrait/16.jpg">
-                                </li>
-                            </ul>
+                <div class="card transparent z-depth-2">
+                    <div class="card-image">
+                        <img src="img/portrait/12.jpg" class="responsive-img">
+                    </div>
+                    <div class="card-content white-text center">
+                        <div class="card-title">
+                            <span>Portrait pictures</span>
                         </div>
-                        <div class="card-action center white-text">
-                            <a class="waves-effect waves-light btn-floating green pulse" href="portfolio.html"><i
-                                    class="material-icons right">palette</i></a>
+                        <div class="card-action">
+                            <a href="portfolio.html#portrait">Go to Portrait</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card transparent z-depth-2">
+                    <div class="card-image">
+                        <img src="img/posters/11.jpg" class="responsive-img">
+                    </div>
+                    <div class="card-content white-text center">
+                        <div class="card-title">
+                            <span>Amazing Posters</span>
+                        </div>
+                        <div class="card-action">
+                            <a href="portfolio.html#portrait">Go to Posters</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col l6 m6">
-
-            </div>
-        </div>
-    </section>
--->
-
-    <!-- Parallax #2 
-    <div class="parallax-container" style="padding-top: 1vw">
-        <div class="parallax"><img src="img/gallery.jpg"></div>
-    </div>
--->
-    <div class="parallax-container" style="padding-top: 1vw">
-        <div class="parallax">
-            <div class="row">
-                <div class="col l6 m6">
-                    <div class="card transparent z-depth-0">
-                        <div class="card-content">
-                            <span class="card-title white-text center">
-                                <h4>Portraits </h4>
-                            </span>
-                            <div class="slider">
-                                <ul class="slides">
-                                    <li>
-                                        <img src="img/portrait/w.jpg">
-                                    </li>
-                                    <li>
-                                        <img src="img/portrait/30.jpg">
-                                    </li>
-                                    <li>
-                                        <img src="img/portrait/27.jpg">
-                                    </li>
-                                    <li>
-                                        <img src="img/portrait/16.jpg">
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="card-action center white-text">
-                                <a class="waves-effect waves-light btn-floating green pulse" href="portfolio.html"><i
-                                        class="material-icons right">palette</i></a>
-                            </div>
+                <div class="card transparent z-depth-2">
+                    <div class="card-image">
+                        <img src="img/3D_caracter_modeling/1.jpg" class="responsive-img">
+                    </div>
+                    <div class="card-content white-text center">
+                        <div class="card-title">
+                            <span>Portrait pictures</span>
+                        </div>
+                        <div class="card-action">
+                            <a href="portfolio.html#portrait">Go to Portrait</a>
                         </div>
                     </div>
                 </div>
-
+                <div class="card transparent z-depth-2">
+                    <div class="card-image">
+                        <img src="img/products/2.jpg" class="responsive-img">
+                    </div>
+                    <div class="card-content white-text center">
+                        <div class="card-title">
+                            <span>Amazing Posters</span>
+                        </div>
+                        <div class="card-action">
+                            <a href="portfolio.html#portrait">Go to Posters</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-panel white-text transparent">
+                    <h4>Follow the links to see the complete works of DIMA</h4>
+                </div>
             </div>
         </div>
-    </div>
+
+
+
+    </main>
+
 
     <!-- footer -->
     <footer class="page-footer footer-color center">
@@ -260,8 +341,6 @@
                     <div style="display: flex; justify-content: space-between" class="hide-on-med-and-down">
                         <a class="footer-style active-foot-link grey-text text-lighten-3" href="home.html">Home</a>
                         <a class="footer-style grey-text text-lighten-3" href="portfolio.html">Portfolio</a>
-                        <a class="footer-style grey-text text-lighten-3" href="contact.html">Contact</a>
-                        <a class="footer-style grey-text text-lighten-3" href="dev.html">Developer Info</a>
                     </div>
                     <div class="row hide-on-large-only">
                         <div class="col m6 s6">
@@ -269,14 +348,6 @@
                         </div>
                         <div class="col m6 s6">
                             <a class="footer-style grey-text text-lighten-3" href="portfolio.html">Portfolio</a>
-                        </div>
-                    </div>
-                    <div class="row hide-on-large-only">
-                        <div class="col m6 s6">
-                            <a class="footer-style grey-text text-lighten-3" href="contact.html">Contact</a>
-                        </div>
-                        <div class="col m6 s6">
-                            <a class="footer-style grey-text text-lighten-3" href="dev.html">Developer Info</a>
                         </div>
                     </div>
                 </div>
@@ -297,10 +368,6 @@
                         <a class="waves-effect waves-light btn modal-trigger grey darken-4" href="#contact_info">Contact
                             Information</a>
                     </div>
-                    <div class="row hide-on-large-only">
-                        <a class="waves-effect waves-light btn modal-trigger grey darken-4" href="#social_media">Social
-                            Media</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -308,18 +375,34 @@
         <div id="contact_info" class="modal bottom-sheet">
             <div class="modal-content white-text grey darken-4">
                 <h4>Contact Information</h4>
-                <p>Phone1: +251 9-- --- ---</p>
-                <p>Phone2: +251 9-- --- ---</p>
-                <p>Primary Email: <a href="johndoe@gmail.com">johndoe@gmail.com</a></p>
-                <p>Secondary Email: <a href="johndoe@gmail.com">johndoe@gmail.com</a></p>
-                <p>Postal Code: -----</p>
+                <p>Phone1: +251-91-271-3307</p>
+                <p>Primary Email: <a href="binyhood58@gmail.com">binyhood58@gmail.com</a></p>
             </div>
         </div>
         <!-- social_media Modal -->
         <div id="social_media" class="modal bottom-sheet">
             <div class="modal-content white-text grey darken-4">
                 <h4>Social Media</h4>
-
+                <div style="display: flex; justify-content: space-between" class="container">
+                    <h2 class="valign-wrapper">
+                        <a href="https://www.facebook.com/yohanes.fikru" style="color:#4267b2" class="tooltipped"
+                            data-position="top" data-tooltip="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </h2>
+                    <h2 class="valign-wrapper center">
+                        <a href="https://twitter.com/Yohanesfikru" style="color:#1c9ceb" class="tooltipped"
+                            data-position="top" data-tooltip="Twitter">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                    </h2>
+                    <h2 class="valign-wrapper align-center">
+                        <a href="https://twitter.com/Yohanesfikru" style="color:#ef2301" class="tooltipped"
+                            data-position="top" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </h2>
+                </div>
             </div>
         </div>
         <!-- Bottom Footer -->
@@ -337,8 +420,8 @@
                 <h5>Name: Yohanes Fikru</h5>
                 <p class="green-text darken-3">Freelance Developer/ Game Developer</p>
                 <p>Made with: <a href="#">Materialize CSS</a></p>
-                <p>For more information <a class=" grey darken-4 grey-text text-lighten-1" href="dev.html"
-                        style="padding-left: 0.5vw">CLICK HERE</a></p>
+                <p>For more information <a class=" grey darken-4 blue-text text-lighten-1"
+                        href="yohanes-fikru.github.io" style="padding-left: 0.5vw">yohanes-fikru.github.io</a></p>
             </div>
         </div>
     </footer>
